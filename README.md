@@ -14,6 +14,10 @@ src/             → Source code of the programs being simulated.
 README.md        → This file.
 ```
 
+## YOU NEED TO DOWNLOAD THE MATRICES AND PLACE THEM IN THE matrix/ FOLDER !!!
+- **Download link for matrices:**  
+  [Google Drive - Simulation Matrices](https://drive.google.com/file/d/1yvISAxhktWMmIK9Be_4dN185-JODppU_/view?usp=drive_link)
+
 ## General Notes
 
 * To **submit jobs**, submit the desired job script using `qsub`.
