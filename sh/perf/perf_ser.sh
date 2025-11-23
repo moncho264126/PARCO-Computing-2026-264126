@@ -28,8 +28,9 @@
 
 
 # ------------------------ VARIABLES ------------------------
-SOURCE_DIR="./src"
-MATRIX_DIR="./matrix"
+BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SOURCE_DIR="$BASE_DIR/src"
+MATRIX_DIR="$BASE_DIR/matrix"
 SOURCE="$SOURCE_DIR/ser_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"
 EXE_NAME="ser_spmv"
@@ -37,8 +38,8 @@ EXE_NAME="ser_spmv"
 VECTORS=("v1.mtx" "v2.mtx" "v3.mtx" "v4.mtx" "v5.mtx")
 MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 
-BUILD_DIR="build"
-RESULTS_DIR="results_perf"
+BUILD_DIR="$BASE_DIR/build"
+RESULTS_DIR="$BASE_DIR/results_perf"
 
 # ------------------------ CREATE DIRECTORIES ------------------------
 mkdir -p "$BUILD_DIR"

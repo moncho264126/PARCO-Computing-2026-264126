@@ -28,8 +28,9 @@
 
 
 # Variables
-SOURCE_DIR="./src"           # Directory where the C source code is
-MATRIX_DIR="./matrix"           # Directory where the .mtx matrices are
+BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SOURCE_DIR="$BASE_DIR/src"           # Directory where the C source code is
+MATRIX_DIR="$BASE_DIR/matrix"           # Directory where the .mtx matrices are
 SOURCE="$SOURCE_DIR/ser_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"
 EXE_NAME="ser_spmv"
@@ -37,8 +38,8 @@ EXE_NAME="ser_spmv"
 MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 VECTORS=("v1.mtx" "v2.mtx" "v3.mtx" "v4.mtx" "v5.mtx")
 
-BUILD_DIR="build"
-RESULTS_DIR="results"
+BUILD_DIR="$BASE_DIR/build"
+RESULTS_DIR="$BASE_DIR/results"
 
 # Create folders if they don't exist
 mkdir -p "$BUILD_DIR"

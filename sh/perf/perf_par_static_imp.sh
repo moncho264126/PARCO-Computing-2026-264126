@@ -27,8 +27,9 @@
  ********************************************************************************************/
 
 # ------------------------ VARIABLES ------------------------
-SOURCE_DIR="./src"
-MATRIX_DIR="./matrix"
+BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SOURCE_DIR="$BASE_DIR/src"
+MATRIX_DIR="$BASE_DIR/matrix"
 SOURCE="$SOURCE_DIR/par_static_imp_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"
 EXE_NAME="par_static_imp_spmv"
@@ -39,8 +40,8 @@ MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 THREADS=(1 2 4 8 16 32 64)
 CHUNKSIZES=(1 100 1000)
 
-BUILD_DIR="build"
-RESULTS_DIR="results_perf"
+BUILD_DIR="$BASE_DIR/build"
+RESULTS_DIR="$BASE_DIR/results_perf"
 
 # ------------------------ CREATE DIRECTORIES ------------------------
 mkdir -p "$BUILD_DIR"

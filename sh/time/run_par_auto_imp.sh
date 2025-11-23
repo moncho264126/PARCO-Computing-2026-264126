@@ -26,8 +26,9 @@
  ********************************************************************************************/
 
 # Variables
-SOURCE_DIR="./src"           # Directory where the C source code is
-MATRIX_DIR="./matrix"           # Directory where the .mtx matrices are
+BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SOURCE_DIR="$BASE_DIR/src"           # Directory where the C source code is
+MATRIX_DIR="$BASE_DIR/matrix"           # Directory where the .mtx matrices are
 SOURCE="$SOURCE_DIR/par_auto_imp_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"
 EXE_NAME="par_auto_imp_spmv"
@@ -37,8 +38,8 @@ MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 
 THREADS_LIST=(1 2 4 8 16 32 64)    # Number of threads to test
 
-BUILD_DIR="build"
-RESULTS_DIR="results"
+BUILD_DIR="$BASE_DIR/build"
+RESULTS_DIR="$BASE_DIR/results"
 
 # Create folders if they don't exist
 mkdir -p "$BUILD_DIR"
