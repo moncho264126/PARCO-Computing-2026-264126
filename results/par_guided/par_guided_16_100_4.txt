@@ -1,0 +1,11 @@
+Results for ./matrix/4.mtx | threads=16 | chunksize=100
+Elapsed time = 7.360753e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 6.691330e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 8.725751e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 9.647717e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 9.368004e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 6.945771e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 5.378614e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 5.818221e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 6.490626e-01 seconds with 16 threads and chunksize 100
+Elapsed time = 9.413707e-02 seconds with 16 threads and chunksize 100

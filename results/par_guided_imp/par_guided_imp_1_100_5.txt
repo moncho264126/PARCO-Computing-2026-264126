@@ -1,0 +1,11 @@
+Results for ./matrix/5.mtx | threads=1 | chunksize=100
+Elapsed time = 1.333289e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.333391e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.332545e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.334718e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.334654e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.340521e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.334172e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.332059e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.332965e+00 seconds with 1 threads and chunksize 100
+Elapsed time = 1.334715e+00 seconds with 1 threads and chunksize 100

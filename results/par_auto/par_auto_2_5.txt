@@ -1,0 +1,11 @@
+Results for ./matrix/5.mtx with 2 threads
+Elapsed time = 1.330514e+00 seconds with 2 threads
+Elapsed time = 1.344352e+00 seconds with 2 threads
+Elapsed time = 1.783945e+00 seconds with 2 threads
+Elapsed time = 1.687419e+00 seconds with 2 threads
+Elapsed time = 1.903017e+00 seconds with 2 threads
+Elapsed time = 1.519026e+00 seconds with 2 threads
+Elapsed time = 1.847279e+00 seconds with 2 threads
+Elapsed time = 1.818633e+00 seconds with 2 threads
+Elapsed time = 1.341600e+00 seconds with 2 threads
+Elapsed time = 1.339815e+00 seconds with 2 threads

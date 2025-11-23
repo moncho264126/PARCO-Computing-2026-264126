@@ -1,0 +1,11 @@
+Results for ./matrix/1.mtx with 8 threads
+Elapsed time = 6.397702e-04 seconds with 8 threads
+Elapsed time = 6.627757e-04 seconds with 8 threads
+Elapsed time = 6.460352e-04 seconds with 8 threads
+Elapsed time = 8.049803e-04 seconds with 8 threads
+Elapsed time = 7.196171e-04 seconds with 8 threads
+Elapsed time = 6.772308e-04 seconds with 8 threads
+Elapsed time = 6.434806e-04 seconds with 8 threads
+Elapsed time = 6.711138e-04 seconds with 8 threads
+Elapsed time = 6.973753e-04 seconds with 8 threads
+Elapsed time = 6.553428e-04 seconds with 8 threads

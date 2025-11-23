@@ -1,0 +1,11 @@
+Results for ./matrix/4.mtx with 64 threads
+Elapsed time = 1.832134e-01 seconds with 64 threads
+Elapsed time = 1.882728e-01 seconds with 64 threads
+Elapsed time = 2.021382e-01 seconds with 64 threads
+Elapsed time = 1.864063e-01 seconds with 64 threads
+Elapsed time = 2.078645e-01 seconds with 64 threads
+Elapsed time = 9.726657e-02 seconds with 64 threads
+Elapsed time = 8.293598e-02 seconds with 64 threads
+Elapsed time = 8.037500e-02 seconds with 64 threads
+Elapsed time = 2.127965e-01 seconds with 64 threads
+Elapsed time = 7.944174e-02 seconds with 64 threads

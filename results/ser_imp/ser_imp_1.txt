@@ -1,0 +1,11 @@
+Results for ./matrix/1.mtx
+Elapsed time = 9.361543e-04 seconds
+Elapsed time = 9.363024e-04 seconds
+Elapsed time = 9.757467e-04 seconds
+Elapsed time = 9.741550e-04 seconds
+Elapsed time = 9.997441e-04 seconds
+Elapsed time = 1.018443e-03 seconds
+Elapsed time = 9.742519e-04 seconds
+Elapsed time = 9.787427e-04 seconds
+Elapsed time = 9.471225e-04 seconds
+Elapsed time = 9.713629e-04 seconds

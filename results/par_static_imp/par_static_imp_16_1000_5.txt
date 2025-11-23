@@ -1,0 +1,11 @@
+Results for ./matrix/5.mtx | threads=16 | chunksize=1000
+Elapsed time = 2.596401e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.576578e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.548454e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.580852e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.569336e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 4.124548e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.583471e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.577896e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.603811e-01 seconds with 16 threads and chunksize 1000
+Elapsed time = 2.550929e-01 seconds with 16 threads and chunksize 1000

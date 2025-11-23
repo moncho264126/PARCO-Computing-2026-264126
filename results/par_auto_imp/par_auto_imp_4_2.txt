@@ -1,0 +1,11 @@
+Results for ./matrix/2.mtx with 4 threads
+Elapsed time = 1.657362e-03 seconds with 4 threads
+Elapsed time = 1.832695e-03 seconds with 4 threads
+Elapsed time = 1.917186e-03 seconds with 4 threads
+Elapsed time = 1.844842e-03 seconds with 4 threads
+Elapsed time = 1.825703e-03 seconds with 4 threads
+Elapsed time = 1.704684e-03 seconds with 4 threads
+Elapsed time = 1.784455e-03 seconds with 4 threads
+Elapsed time = 1.754862e-03 seconds with 4 threads
+Elapsed time = 1.842898e-03 seconds with 4 threads
+Elapsed time = 1.800856e-03 seconds with 4 threads

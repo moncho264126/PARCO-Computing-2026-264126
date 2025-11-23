@@ -1,0 +1,11 @@
+Results for ./matrix/1.mtx with 32 threads
+Elapsed time = 9.915677e-03 seconds with 32 threads
+Elapsed time = 1.003785e-02 seconds with 32 threads
+Elapsed time = 9.936266e-03 seconds with 32 threads
+Elapsed time = 1.005026e-02 seconds with 32 threads
+Elapsed time = 9.976532e-03 seconds with 32 threads
+Elapsed time = 9.934681e-03 seconds with 32 threads
+Elapsed time = 9.944185e-03 seconds with 32 threads
+Elapsed time = 9.904006e-03 seconds with 32 threads
+Elapsed time = 1.006196e-02 seconds with 32 threads
+Elapsed time = 9.983166e-03 seconds with 32 threads

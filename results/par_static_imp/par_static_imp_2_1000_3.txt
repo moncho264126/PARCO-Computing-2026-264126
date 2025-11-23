@@ -1,0 +1,11 @@
+Results for ./matrix/3.mtx | threads=2 | chunksize=1000
+Elapsed time = 8.623566e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.511846e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.830785e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.495131e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.535980e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.523838e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.648155e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.426089e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.557185e-01 seconds with 2 threads and chunksize 1000
+Elapsed time = 8.471848e-01 seconds with 2 threads and chunksize 1000

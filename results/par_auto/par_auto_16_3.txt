@@ -1,0 +1,11 @@
+Results for ./matrix/3.mtx with 16 threads
+Elapsed time = 1.405464e-01 seconds with 16 threads
+Elapsed time = 1.428095e-01 seconds with 16 threads
+Elapsed time = 1.292516e-01 seconds with 16 threads
+Elapsed time = 1.529652e-01 seconds with 16 threads
+Elapsed time = 1.285408e-01 seconds with 16 threads
+Elapsed time = 1.314256e-01 seconds with 16 threads
+Elapsed time = 1.376225e-01 seconds with 16 threads
+Elapsed time = 1.319815e-01 seconds with 16 threads
+Elapsed time = 1.347249e-01 seconds with 16 threads
+Elapsed time = 1.321036e-01 seconds with 16 threads

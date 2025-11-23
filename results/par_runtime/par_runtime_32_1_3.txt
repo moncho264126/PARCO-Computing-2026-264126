@@ -1,0 +1,11 @@
+Schedule = guided | Threads = 32 | Chunk = 1
+Elapsed time = 1.337767e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.178271e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.053299e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 9.636837e-02 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.280893e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.221212e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.156720e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.218134e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 1.312413e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
+Elapsed time = 2.944301e-01 seconds | threads=32 | OMP_SCHEDULE=guided,1
