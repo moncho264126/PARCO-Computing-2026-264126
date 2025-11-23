@@ -6,7 +6,6 @@ This repository contains the complete setup for running and analyzing simulation
 
 ```
 matrix/          → Matrices and vectors used in simulations.
-pbs/             → PBS job scripts for submitting simulations to the cluster.
 python/          → Python scripts for processing and visualizing results.
 results/         → Output TXT files from timing simulations.
 results_perf/    → Output TXT files from performance counter simulations.
@@ -17,7 +16,7 @@ README.md        → This file.
 
 ## General Notes
 
-* To **submit jobs**, go to the `pbs/` directory, then enter either `perf/` or `time/` to submit the desired job script using `qsub`.
+* To **submit jobs**, submit the desired job script using `qsub`.
 * The `sh/` folder contains scripts that compile and run the programs. If any simulation parameters change (matrix size, number of threads, chunk size, etc.), these scripts must be updated.
 * All Python scripts in `python/` process the outputs stored in `results/` and `results_perf/`.
 * Matrices and vectors for simulations are stored in the `matrix/` folder.
@@ -49,8 +48,6 @@ gcc -g -Wall -fopenmp -o par_auto_spmv par_auto_spmv.c mmio.c
 ### Cluster execution:
 
 ```bash
-# Go to PBS scripts folder
-cd pbs/perf          # or pbs/time
 # Submit job
 qsub run_ser_imp.sh
 ```

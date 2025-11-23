@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -N serJob16
+#PBS -q short_cpuQ
+#PBS -l select=1:ncpus=32:mem=50gb
+#PBS -l walltime=06:00:00
+#PBS -o logs/serial_perf_output.log
+#PBS -e logs/serial_perf_error.log
+
+# Load modules
+module purge
+module load perf
+module load gcc91
+
+# Submission directory
+cd $PBS_O_WORKDIR
+
+# Create log directory
+mkdir -p logs
+
+# Ensure that the execution script is executable
+chmod +x ./sh/perf_ser.sh
+
+# Execute
+./sh/perf_ser.sh
