@@ -53,7 +53,7 @@ chmod +x ../sh/perf/perf_par_dynamic.sh
 
 ## Usage
 
-1. Place the appropriate PBS script in the `pbs/` folder.
+1. Place yourself in the folder of the scrip you want to submit
 2. Submit the job to the cluster using:
 
    ```bash
