@@ -16,7 +16,7 @@ Inside each of these subfolders, you will find **text files (`.txt`)** that stor
 
 The naming convention of the result files follows the structure:
 
-par_<schedule>_<threads>_<chunksize>_<matrix>.txt
+par_{schedule}_{threads}_{chunksize}_{matrix}.txt
 
 
 Where:
