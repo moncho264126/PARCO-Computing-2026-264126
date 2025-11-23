@@ -28,7 +28,7 @@
 
 
 # ------------------------ VARIABLES ------------------------
-SOURCE_DIR="./source"
+SOURCE_DIR="./src"
 MATRIX_DIR="./matrix"
 SOURCE="$SOURCE_DIR/ser_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"

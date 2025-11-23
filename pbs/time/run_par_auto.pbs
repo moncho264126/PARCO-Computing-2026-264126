@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N par_auto_Job16
+#PBS -q short_cpuQ
+#PBS -l select=1:ncpus=32:mem=50gb
+#PBS -l walltime=06:00:00
+#PBS -o ../logs/parallel_auto_output.log
+#PBS -e ../logs/parallel_auto_error.log
+
+# Load modules
+module purge
+module load gcc91
+
+# Submission directory
+cd $PBS_O_WORKDIR
+
+# Create log directory
+mkdir -p ../logs
+
+# Ensure that the execution script is executable
+chmod +x ../sh/time/run_par_auto.sh
+
+# Execute
+../sh/time/run_par_auto.sh

@@ -26,7 +26,7 @@
  ********************************************************************************************/
 
 # Variables
-SOURCE_DIR="./source"           # Directory where the C source code is
+SOURCE_DIR="./src"           # Directory where the C source code is
 MATRIX_DIR="./matrix"           # Directory where the .mtx matrices are
 SOURCE="$SOURCE_DIR/par_auto_imp_spmv.c"
 MMIO="$SOURCE_DIR/mmio.c"
