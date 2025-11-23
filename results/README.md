@@ -1,6 +1,6 @@
 # Simulation Results
 
-This folder contains the **results of all temporal simulations** conducted with the Sparse Matrix-Vector multiplication programs. You need to introduce the results in the corresponding folder so that the python scrip can read it
+This folder contains the **results of all temporal simulations** conducted with the Sparse Matrix-Vector multiplication programs.
 
 ## Folder Structure
 

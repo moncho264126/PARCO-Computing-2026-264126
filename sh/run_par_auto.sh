@@ -13,7 +13,7 @@ MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 THREADS_LIST=(1 2 4 8 16 32 64)    # Number of threads to test
 
 BUILD_DIR="build"
-RESULTS_DIR="results"
+RESULTS_DIR="results/par_auto"
 
 # Create folders if they don't exist
 mkdir -p "$BUILD_DIR"

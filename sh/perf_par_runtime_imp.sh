@@ -15,7 +15,7 @@ THREADS=(1 2 4 8 16 32 64)
 CHUNKSIZES=(1 100 1000)
 
 BUILD_DIR="build"
-RESULTS_DIR="results_perf"
+RESULTS_DIR="results_perf/par_runtime_imp"
 
 # ------------------------ CREAR CARPETAS ------------------------
 mkdir -p "$BUILD_DIR"

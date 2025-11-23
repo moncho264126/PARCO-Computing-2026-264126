@@ -11,7 +11,7 @@ VECTORS=("v1.mtx" "v2.mtx" "v3.mtx" "v4.mtx" "v5.mtx")
 MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 
 BUILD_DIR="build"
-RESULTS_DIR="results"
+RESULTS_DIR="results/par_runtime_imp"
 
 # Configuración para probar únicamente schedule GUIDED
 SCHEDULE_TYPE="guided"

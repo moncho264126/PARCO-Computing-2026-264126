@@ -13,7 +13,7 @@ MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 THREADS_LIST=(1 2 4 8 16 32 64)
 
 BUILD_DIR="build"
-RESULTS_DIR="results_perf"
+RESULTS_DIR="results_perf/par_auto_imp"
 
 # ------------------------ CREAR CARPETAS ------------------------
 mkdir -p "$BUILD_DIR"

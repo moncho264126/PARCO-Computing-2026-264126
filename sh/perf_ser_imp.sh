@@ -11,7 +11,7 @@ VECTORS=("v1.mtx" "v2.mtx" "v3.mtx" "v4.mtx" "v5.mtx")
 MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 
 BUILD_DIR="build"
-RESULTS_DIR="results_perf"
+RESULTS_DIR="results_perf/ser_imp"
 
 # ------------------------ CREAR CARPETAS ------------------------
 mkdir -p "$BUILD_DIR"

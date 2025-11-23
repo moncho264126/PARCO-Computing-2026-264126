@@ -11,7 +11,7 @@ MATRICES=("1.mtx" "2.mtx" "3.mtx" "4.mtx" "5.mtx")
 VECTORS=("v1.mtx" "v2.mtx" "v3.mtx" "v4.mtx" "v5.mtx")
 
 BUILD_DIR="build"
-RESULTS_DIR="results"
+RESULTS_DIR="results/ser"
 
 # Create folders if they don't exist
 mkdir -p "$BUILD_DIR"
