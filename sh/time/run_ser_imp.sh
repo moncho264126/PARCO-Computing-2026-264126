@@ -1,3 +1,4 @@
+#!/bin/bash
 /********************************************************************************************
  * Description:
  *    Automated execution script for the serial (single-threaded) Sparse Matrix-Vector

@@ -1,3 +1,4 @@
+#!/bin/bash
 /********************************************************************************************
  * Description:
  *    Automated benchmarking script for the serial (single-threaded) Sparse Matrix-Vector

@@ -1,3 +1,4 @@
+#!/bin/bash
 /********************************************************************************************
  * Description:
  *    Automated benchmarking script for the parallel Sparse Matrix-Vector multiplication
