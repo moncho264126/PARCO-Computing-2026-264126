@@ -1,26 +1,34 @@
-# Simulation Results
+# Experimental Results (Distributed SpMV)
 
-This folder contains the **results of all temporal simulations** conducted with the Sparse Matrix-Vector multiplication programs.
+This folder contains the **raw output logs** from the distributed Sparse Matrix-Vector multiplication experiments using MPI.
 
-## Folder Structure
+## File Naming Convention
 
-The results are organized into subfolders based on the type of simulation:
+The results are stored in text files (`.txt`) following a strict naming convention that identifies the scaling regime, the I/O strategy, and the process count.
 
-- **ser/** – Results from the serial implementation.
-- **ser_imp/** – Results from the serial implementation with optimizations.
-- **par_guided_imp/** – Results from the parallel optimized implementation with OpenMP using guided scheduling.
+**Format:**
+`[scaling]_[strategy]_np_[count].txt`
 
-Inside each of these subfolders, you will find **text files (`.txt`)** that store the output of the simulations.
+### Components:
 
-## File Format
+1.  **Scaling Regime** (`[scaling]`):
+    * `strong`: **Strong Scaling** (Fixed global problem size, measuring speedup).
+    * `weak`: **Weak Scaling** (Fixed problem size per process, measuring throughput stability).
 
-The naming convention of the result files follows the structure:
+2.  **Strategy / Partitioning** (`[strategy]`):
+    * `2d`: **2D Grid Partitioning** (Uses row/col communicators).
+    * `mpiio`: **1D Partitioning with MPI-IO** (Parallel collective I/O).
+    * `concurrent`: **1D Partitioning with Concurrent I/O** (Independent file access).
+    * *(None)*: **1D Partitioning with Centralized Input** (Baseline strategy, e.g., `strong_np_128.txt`).
 
-`par_{schedule}_{threads}_{chunksize}_{matrix}.txt`
+3.  **Process Count** (`[count]`):
+    * The integer following `np_` represents the number of MPI processes used (e.g., `1`, `8`, `64`, `128`).
 
+## Examples
 
-Where:
-
-- `<threads>` – Number of OpenMP threads used (only relevant for parallel implementations).
-- `<chunksize>` – Chunk size used in scheduling (only relevant for parallel implementations).
-- `<matrix>` – Identifier of the matrix used in the simulation.
+| Filename | Description |
+| :--- | :--- |
+| `strong_2d_np_128.txt` | Strong scaling, 2D Grid strategy, 128 Processes. |
+| `weak_mpiio_np_64.txt` | Weak scaling, 1D Partitioning (MPI-IO), 64 Processes. |
+| `strong_np_32.txt` | Strong scaling, 1D Partitioning (Centralized Baseline), 32 Processes. |
+| `weak_concurrent_np_16.txt` | Weak scaling, 1D Partitioning (Concurrent Read), 16 Processes. |

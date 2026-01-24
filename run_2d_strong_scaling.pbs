@@ -18,7 +18,6 @@ cd $PBS_O_WORKDIR
 mkdir -p logs
 
 # Ensure that the execution script is executable
-# ASUMIENDO QUE EL SCRIPT SE LLAMA: run_2d_strong_scaling.sh
 chmod +x ./sh/run_2d_strong_scaling.sh
 
 # Execute

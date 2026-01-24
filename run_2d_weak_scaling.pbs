@@ -6,14 +6,6 @@
 #PBS -o logs/weak_output.log
 #PBS -e logs/weak_error.log
 
-# ==============================
-# Explicación de recursos:
-# Queremos llegar a 128 Procesos MPI.
-# Configuración: 32 chunks * 4 mpiprocs = 128 Procesos MPI Total.
-# Hilos: Cada chunk tiene 8 CPUs. Hay 4 procesos. 8/4 = 2 CPUs por proceso.
-# Esto permite OMP_NUM_THREADS=2 sin oversubscription.
-# ==============================
-
 module purge
 module load gcc91
 module load mpich-3.2.1--gcc-9.1.0
@@ -21,7 +13,6 @@ module load mpich-3.2.1--gcc-9.1.0
 cd $PBS_O_WORKDIR
 mkdir -p logs
 
-# Asegurar variables de entorno para OpenMP
 export OMP_NUM_THREADS=2
 export OMP_PROC_BIND=true
 export OMP_PLACES=cores
