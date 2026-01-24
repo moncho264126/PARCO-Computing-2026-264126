@@ -43,10 +43,47 @@ The core implementations are written in **C using MPI**:
   - MPI-IO input
 
 - **2D Grid Partitioning**  
-  Uses row/column communicators to minimize communication surface  
-  \[
-  O(\sqrt{P})
-  \]
+  Uses row/column communicators to minimize communication surface
 
-- **Hybrid (Experimental)**  
-  MPI + OpenMP implementation
+---
+
+### 2. Job Submission (`*.pbs`)
+
+The root directory contains **PBS Pro** scripts to launch experiments on the cluster.  
+They are categorized by **Scaling Regime** and **Strategy**:
+
+| PBS Script | Description |
+|-----------|-------------|
+| `run_strong_scaling.pbs` | Baseline 1D (Centralized Input) – Strong Scaling |
+| `run_weak_scaling.pbs` | Baseline 1D (Centralized Input) – Weak Scaling |
+| `run_mpiio_*.pbs` | 1D Partitioning using MPI-IO (Parallel I/O) |
+| `run_concurrent_*.pbs` | 1D Partitioning using Concurrent file access |
+| `run_2d_*.pbs` | 2D Grid Partitioning (Optimized topology) |
+| `run_hybrid_*.pbs` | Hybrid MPI + OpenMP experiments |
+
+---
+
+### 3. Analysis (`python/`)
+
+Contains the post-processing pipeline:
+
+- **`compare_strong.py`**  
+  Generates *Speedup* and *Efficiency* comparison plots.
+
+- **`compare_weak.py`**  
+  Generates *GFLOPs* and *Stability* plots.
+
+- **Individual analyzers** (e.g. `analyze_strong_2d.py`)  
+  Used for in-depth analysis of specific strategies.
+
+---
+
+## How to Run
+
+### 1. Submit Experiments
+
+To run a full scalability suite (e.g. **Strong Scaling for the 2D strategy**), submit the corresponding PBS script from the root directory:
+
+```bash
+qsub run_2d_strong_scaling.pbs
+
