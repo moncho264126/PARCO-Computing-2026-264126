@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -N hybrid_strong
+#PBS -q short_cpuQ
+#PBS -l walltime=06:00:00
+#PBS -l select=16:ncpus=8:mpiprocs=1:mem=50gb
+#PBS -o logs/strong_hybrid_output.log
+#PBS -e logs/strong_hybrid_error.log
+
+module purge
+module load gcc91
+module load mpich-3.2.1--gcc-9.1.0
+
+cd $PBS_O_WORKDIR
+mkdir -p logs
+
+# Aseguramos que OpenMP use los 8 hilos
+export OMP_NUM_THREADS=8
+
+# Opcional: Ayuda a que los hilos no salten de núcleo en núcleo (mejora caché)
+export OMP_PROC_BIND=true
+export OMP_PLACES=cores
+
+chmod +x ./sh/run_hybrid_strong_scaling.sh
+./sh/run_hybrid_strong_scaling.sh

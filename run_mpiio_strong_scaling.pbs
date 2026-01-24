@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -N spmv_strong
+#PBS -q short_cpuQ
+#PBS -l walltime=06:00:00
+#PBS -l select=16:ncpus=8:mpiprocs=8:mem=50gb
+#PBS -o logs/strong_mpiio_output.log
+#PBS -e logs/strong_mpiio_error.log
+
+# Load modules
+module purge
+module load gcc91
+module load mpich-3.2.1--gcc-9.1.0
+
+# Submission directory
+cd $PBS_O_WORKDIR
+
+# Create log directory
+mkdir -p logs
+
+# Ensure that the execution script is executable
+chmod +x ./sh/run_mpiio_strong_scaling.sh
+
+# Execute
+./sh/run_mpiio_strong_scaling.sh
