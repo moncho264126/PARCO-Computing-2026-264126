@@ -5,8 +5,6 @@ This repository contains the complete source code, execution scripts, and analys
 The project evaluates the performance trade-offs between **1D Row-wise Partitioning** (using various I/O strategies) and **2D Grid Partitioning** on a high-performance computing cluster.
 
 ## Directory Structure
-
-```text
 .
 ├── matrix/          # Input matrices (MTX format) and vectors.
 ├── python/          # Python scripts for parsing logs and plotting results.
